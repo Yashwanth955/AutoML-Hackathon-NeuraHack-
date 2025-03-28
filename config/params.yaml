@@ -1,0 +1,17 @@
+# Configuration for breast cancer dataset
+target_column: "diagnosis"  # Malignant (M) or Benign (B)
+test_size: 0.2
+random_state: 42
+
+feature_selection:
+  enable: true
+  k: 10
+  method: "anova"
+
+dimensionality_reduction:
+  enable: false
+  n_components: 0.95
+
+hyperparameter_tuning:
+  n_iter: 30
+  cv: 5
